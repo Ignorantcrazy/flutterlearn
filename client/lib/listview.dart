@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 import 'constparam.dart';
 
 class ListViewFormApi extends StatefulWidget {
+  ListViewFormApi({Key key}) : super(key: key);
   @override
   _ListViewFormApiState createState() => new _ListViewFormApiState();
 }

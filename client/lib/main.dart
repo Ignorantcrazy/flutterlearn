@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'FormTestRoute.dart';
 import 'calcpage.dart';
 import 'listview.dart';
+import 'tcpipwrite.dart';
 
 void main() => runApp(MyApp());
 
@@ -62,6 +63,18 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(context,
                     new MaterialPageRoute(builder: (context) {
                   return new ListViewFormApi();
+                }));
+              },
+            ),
+            new IconButton(
+              icon: new Icon(Icons.portrait),
+              onPressed: () {
+                Navigator.push(context,
+                    new MaterialPageRoute(builder: (context) {
+                  return new TCPIPWritePage(
+                    host: '',
+                    port: 200,
+                  );
                 }));
               },
             ),
